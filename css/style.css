@@ -7,7 +7,7 @@
 
 header {
   display: flex;
-  background: silver;
+  background: #fff;
   justify-content: space-between;
   
 }
@@ -35,33 +35,87 @@ nav a {
   line-height: 64px;
   display: block;
   font-size: 14px;
+  text-decoration: none;
+  color: #333;
 }
 
 nav a:hover {
-  background: rgb(144, 197, 233);
+  background: silver;
 }
 
-main h1{
+
+.heading {
+  position: relative;
+  background-image: url(../img/slot1.jpg);
+  background-size: cover;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.heading::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgb(126, 128, 129);
+  opacity: 0.3;
+  
+}
+
+.heading img {
+  width: 100%;
+  height: 100%;
+}
+
+.heading h1 {
+  position: absolute;
+  width: 89%;
+  left: 50%;
+  transform: translate(-50%, 20px);
   color: red;
   background: -webkit-linear-gradient(0deg,red, orange, yellow, limegreen, green, blue, rgb(58, 18, 167) ,purple);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
+  font-size: 50px;
 }
 
-
-.headding {
-  background-image: url(../img/slot1.jpg);
-  background-size: cover;
-  height: 600px;
+.container ul {
+  list-style: none;
+  display: flex;
+  font-size: 20px;
 }
 
-.headding img {
-  width: 100%;
-  height: 100%;
+.menu li a {
+  display: inline-block;
+  margin-right: 10px;
+  text-align: center;
+  color: #333;
+  text-decoration: none;
 }
 
-.headding h1 {
-  width: 43%;
-  margin: 0 auto;
+.menu li:last-child a {
+  margin-right: 0;
+}
+
+.menu li a.active {
+  background: #333;
+  color: #fff;
+  border-radius: 4px 4px 0 0;
+}
+
+.menu li a:not(.active):hover {
+  opacity: 0.5;
+  transition-property: opacity 0.4s;
+}
+
+.content.active {
+  background: #333;
+  color: #fff;
+  min-height: 150px;
+  display: block;
+}
+
+.content {
+  display: none;
 }
