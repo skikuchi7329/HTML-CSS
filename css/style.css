@@ -125,3 +125,71 @@ nav a:hover {
   color: #fff;
 }
 
+.career {
+  text-align: center;
+  font-size: 20px;
+}
+
+.lead-form {
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 50px;
+}
+
+form {
+  width: 460px;
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.item {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.label {
+  float: left;
+  margin-right: 10px;
+  width: 150px;
+  border-left: solid 3px skyblue;
+  padding-left: 10px;
+}
+
+textarea {
+  width: 289px;
+}
+
+.inputs {
+  border-radius: 5px;
+  
+}
+
+.btn {
+  text-align: center;
+}
+
+input[type="submit"] {
+  background: #e0505c;
+  border: none;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 0 auto;
+  position: absolute;
+  top: 78%;
+  left: 56%;
+  border-radius: 4px;
+}
+
+footer {
+  color: #333;
+  background: silver;
+}
+
+footer .p {
+  margin: 0 auto;
+  text-align: center;
+}
+

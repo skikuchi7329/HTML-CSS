@@ -35,7 +35,7 @@
           <li><a href="" data-id="contact">コンタクト</a></li>
         </ul>
         <div class="content active" id="profile">
-          <p>
+          <p class="career">
             名前：しょぺこ<br>
             スロット歴：７年<br>
             Twitter：<a href="">@Hit_TheSlot_ToEat</a><br>
@@ -52,27 +52,28 @@
         </div>
 
         <div class="content" id="contact">
+          <p class="lead-form">気軽になんでも質問してください。勝ち組になるためには、成功者に聞くことが一番の近道です。</p>
           <form action="" method="post">
-            <p>気軽になんでも質問してください。勝ち組になるためには、成功者に聞くことが一番の近道です。</p>
-            <p>
-              お名前：        
-              <input  type="text" name="name" size="40"> 
 
-            </p>
-            <p> 
-              メールアドレス：
-              <input type="email" name="mail" size="40"> 
-            </p>
+            <div class="item">
+                <label class="label" for="yourname">お名前：</label>         
+                <input class="inputs" id="yourname" type="text" name="name" size="40"> 
+            </div>
 
-            <p>
-              お問合せ内容：<br>
-              <textarea name="comment" id="comment" cols="40" rows="10"></textarea><br>
+            <div class="item">
+                <label class="label" for="mail">メールアドレス：</label>
+                <input class="inputs" id="mail" type="email" name="mail" size="40"> 
+            </div>
 
-            </p>
+            <div class="item">
+                <label class="label" for="comment">お問合せ内容：</label> 
+                <textarea class="inputs" name="comment" id="comment" cols="40" rows="10"></textarea><br>
+            </div>
 
-            <p>
+            <div class="btn">
               <input type="submit" value="送信">
-            </p>
+            </div>
+            
 
           </form>
 
@@ -81,7 +82,11 @@
     </section>
   </main>
 
-  <footer>(c)shopeco.com</footer>
+  <footer>
+    <p>
+      (c)shopeco.com
+    </p>
+</footer>
   
   <script src="js/main.js"></script>
 </body>
