@@ -205,4 +205,53 @@ footer {
   background-color: silver;
 }
 
+.intro-section__block {
+  padding-top: 30px;
+  display: flex;
+  height: 400px;
+}
 
+.intro-section__block > * {
+  width: 50%;
+}
+
+/* 偶数番目の場合、横並びを反転 */
+.intro-section__block:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/* 各画像を設定 */
+.intro-section__block:nth-child(1) .intro-section__img-area {
+  background-image: url("../img/img_content-1.jpg");
+}
+
+.intro-section__block:nth-child(2) .intro-section__img-area {
+  background-image: url("../img/img_content-2.jpg");
+}
+
+.intro-section__block:nth-child(3) .intro-section__img-area {
+  background-image: url("../img/img_content-3.jpg");
+}
+
+/* 画像エリア */
+.intro-section__img-area {
+  background: center center no-repeat;
+  background-size: cover;
+}
+
+/* 文章エリア */
+.intro-section__txt-area {
+  box-sizing: border-box;
+  color: #fff;
+  background-color: gray;
+}
+
+/* タイトル */
+.intro-section__txt-area h4 {
+  font-size: 1.8rem;
+}
+
+/* 文章 */
+.intro-section__txt-area p {
+  font-size: 1.6rem;
+}
