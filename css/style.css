@@ -18,6 +18,7 @@ header img {
   margin-left: 15px;
 }
 
+/* タブメニュー */
 nav {
   margin-left: auto;
   
@@ -43,7 +44,7 @@ nav a:hover {
   background: silver;
 }
 
-
+/* メインセクション */
 .heading {
   position: relative;
   background-image: url(../img/slot1.jpg);
@@ -206,7 +207,7 @@ footer {
 }
 
 .intro-section__block {
-  padding-top: 30px;
+  /* padding-top: 30px; */
   display: flex;
   height: 400px;
 }
@@ -242,16 +243,30 @@ footer {
 /* 文章エリア */
 .intro-section__txt-area {
   box-sizing: border-box;
-  color: #fff;
-  background-color: gray;
+  color: #333;
+  background-color: #f7e9ca;
 }
 
 /* タイトル */
 .intro-section__txt-area h4 {
   font-size: 1.8rem;
+  color: #444;
 }
 
 /* 文章 */
 .intro-section__txt-area p {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+  color: #444;
+}
+
+.machines {
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  color: #232323;
+  background: #fff8e8;
+  border-left: solid 10px #ffc06e;
+}
+
+.machines li {
+  
 }
