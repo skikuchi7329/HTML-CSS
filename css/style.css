@@ -75,7 +75,7 @@ nav a:hover {
   top: 23%;
   transform: translate(-50%, 20px);
   color: red;
-  background: -webkit-linear-gradient(0deg,red, orange, yellow, limegreen, green, blue, rgb(58, 18, 167) ,purple);
+  background: -webkit-linear-gradient(0deg,red, orange, yellow, limegreen, green, #0000ff, rgb(58, 18, 167) ,purple);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
@@ -257,6 +257,13 @@ footer {
 .intro-section__txt-area p {
   font-size: 1.4rem;
   color: #444;
+}
+
+.lists {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    border: solid 3px #ffc06e;
 }
 
 .machines {
